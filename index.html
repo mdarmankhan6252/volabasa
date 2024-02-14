@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <script src="https://cdn.tailwindcss.com"></script>
+   <title>Valobasa dibos</title>
+</head>
+<body class="bg-gradient-to-r from-violet-500 to-fuchsia-500 w-full h-screen px-2 py-4">
+   <h1 class="text-white text-2xl  text-center my-8">আপনার গার্ল ফ্রেন্ড সম্পর্কে জানুন</h1>
+
+   <textarea id="toSetValue" rows="8" class="w-full bg-transparent border-2 border-purple-400 rounded-lg outline-none text-white text-xl p-2" disabled ></textarea>
+
+   <div class="mt-6 *:w-full space-y-6 *:p-2.5 *:bg-transparent *:placeholder:text-gray-200 *:text-xl *:text-white *:border-2 *:rounded-lg *:outline-none">
+      <input id="demo1" type="text" placeholder="নিজের নাম লিখুন">
+      <input id="demo2" type="text" placeholder="গার্ল ফ্রেন্ডের নাম লিখুন">
+      <button onclick="myFunction()" class="">ফলাফল দেখুন</button>
+      
+   </div>
+   <script>
+      function myFunction(){
+         const name = document.getElementById('demo1');
+         const selfName = name.value;
+         
+         const gfName = document.getElementById('demo2');
+         const selfGfName = gfName.value;
+
+         const toSetValue = document.getElementById('toSetValue');
+         toSetValue.innerText = selfName + ' তুমি ভালো হয়ে জাও। তোমার গার্ল ফ্রেন্ড ' + selfGfName + ' এখন শাকিল নামের এক ছেলের সাথে টাঙ্কি মারতেছে।';
+
+
+
+
+
+
+      }
+   </script>
+   
+</body>
+</html>
